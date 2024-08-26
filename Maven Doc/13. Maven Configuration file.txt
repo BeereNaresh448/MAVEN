@@ -1,0 +1,11 @@
+Maven Configuration file:
+==========================
+	Maven configuration file is -----> pom.xml file
+
+Maven home directory path:
+==============================
+	/urs/share/apcahe-maven
+
+Maven Local Repository path:
+==============================
+	C:\Users\user\.m2

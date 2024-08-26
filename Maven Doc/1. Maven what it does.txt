@@ -1,0 +1,22 @@
+Maven What It Does?
+======================
+
+Maven simplifies the above mentioned problems. It does mainly following tasks.
+
+1. It makes a project easy to build.
+
+2. It provides uniform build process (maven project can be shared by all the maven projects).
+
+3. It provides project information (log document, cross referenced sources, mailing list,       	   dependency list, unit test reports etc..
+
+4. It is easy to migrate for new features of Maven.
+
+
+Apache Maven helps to manage
+
+--->Builds
+--->Documentation
+--->Reporing
+--->SCMs
+--->Releases
+--->Distribution

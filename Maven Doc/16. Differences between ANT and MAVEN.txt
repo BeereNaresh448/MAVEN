@@ -1,0 +1,34 @@
+Differences between ANT and MAVEN
+===================================
+
+ ANT: Build Tool
+-----------------
+
+1. Works for Java based projects only.
+
+2. Ant has no LifeCycle.
+
+3. ANT has build.xml.
+
+4. Ant does not checks junit test cases.
+
+5. Ant has scripts. ==> scripts are not reusable.
+
+6. Ant does not checks dependencies.
+
+
+ MAVEN : Build Tool
+------------------------
+
+1. Works for Java based projects only.
+
+2. Maven has Lificycle.
+
+3. Maven works for Project Object Model ===>pom.xml
+
+4. Maven checks the junit test case by default.
+
+5. Maven has plug-ins (plugins means adding external features to our project).
+
+6. Maven checks the dependencies.
+

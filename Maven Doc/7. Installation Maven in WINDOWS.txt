@@ -1,0 +1,75 @@
+
+Maven Instalaltion in Windows
+=============================
+
+
+Pre- Requisites:
+-----------------
+1. Java Instalaltion 
+2. Install Git
+3. Install Maven
+
+
+1. Java Installation Steps:
+----------------------------
+
+Step1: Download java(.exe file) form Orcle website and install java software
+	Link: https://www.oracle.com/in/java/technologies/downloads/
+	When we installed java software we will get two things
+	1. JDk ----> Java Development Kit
+	2. JRE ----> Java Runtime Environment
+	   JDK contains set of tools to develop java programs.
+	   JRE contains platform/environemnt which is used to run java programs
+Step2: Set JAVA_HOME in Environment variables (System Environment variables)
+      ----> User Environment Variables: Specify to perticular account which logged in our PC.
+      ----> System Environment Variables: For all Accounts
+NOTE: Environment Variables will used by OS.
+
+	JAVA_HOME= C:\Program Files\Java\jdk1.8.0_202
+Step3: Set path of JAVA
+	Goto System Env Var--->Env Var---> System var---> Select path and click on edit then
+        add path as below
+	C:\Program Files\Java\jdk1.8.0_202\bin Click ok.
+Step4: To verify Java Installation
+	
+	C:\Users\user>java -version
+	java version "18.0.2.1" 2022-08-18
+	Java(TM) SE Runtime Environment (build 18.0.2.1+1-1)
+	Java HotSpot(TM) 64-Bit Server VM (build 18.0.2.1+1-1, mixed mode, sharing)
+
+2. Git Instalaltion Steps:
+----------------------------
+Step 1: Download git(.exe file) software from internet
+	Link: https://git-scm.com/download/win
+Step 2: Install the git by clicking next.....
+
+Step 3: To verifi git Istallation
+	C:\Users\user>git --version
+	git version 2.43.0.windows.1
+
+Note: To clone the project from github we must install git.
+
+
+3. Maven Installation Steps:
+-----------------------------
+
+Step1: Download Mavan Zip file form internet
+       Link: https://maven.apache.org/download.cgi
+Step2: Extract the unzip file
+Step3: Just copy the that file into C drive.
+Step4:	Add JAVA_HOME and MAVEN_HOME in environment variable
+	Add maven path in environment variable
+Step5: To verify maven installation
+	C:\>mvn --version
+	Apache Maven 3.9.7 (8b094c9513efc1b9ce2d952b3b9c8eaedaf8cbf0)
+	Maven home: C:\Program Files\apache-maven-3.9.7
+	Java version: 18.0.2.1, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-	18.0.2.1
+	Default locale: en_US, platform encoding: UTF-8
+	OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
+
+
+
+
+
+
+

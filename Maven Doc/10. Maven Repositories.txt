@@ -1,0 +1,86 @@
+Maven Repositories
+==================
+
+     In Maven, a repository is a directory where all the project jars, library jar,plugins
+      or any other projects specific artifacts are stored and can be used by Maven easily.
+
+Maven repository are of THREE types.
+
+1. Local Repository
+2. Remote Repository
+3. Central Repository
+
+
+1. Local Repository:
+---------------------
+----->Local repository gets created when we run any maven command for the first time.
+----->Maven local repository keeps our projects all dependencies (library jars, plugin etc.
+-----> When run maven build, the maven automatically downloads all the dependency jars into
+	local repository.
+
+Location of the Local repository:
+
+	C:\Users\user\.m2
+
+2. Central Repository:
+------------------------
+----> Maven central repository is maintained by Apcahe Organization/ Mavan Community.
+----> If a project requires any dependencies first maven looks the local repository,
+      if it is not available then go to Central Repository/remote repository based on         configuration and download, it will be added to Projcet build path.
+----> by deault maven will conncet with central repository.
+----> it requires internet access to be searched.
+
+
+3. Remote Repository:
+----------------------
+
+---> Every Comapany/Oraganization will maintained their own repositories.
+
+     Ex: IBM comapny used their own repositories..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

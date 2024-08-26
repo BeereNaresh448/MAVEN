@@ -1,0 +1,224 @@
+POM.XML
+--------
+
+	Project Object Model.XML file
+
+-> Contains Information of Project and Configuration Information 
+    for the maven to build the project such as 
+    depedencies, build directory, source directory, test directory, plugin,goals etc...
+
+->Maven reads the pom.xml file, then execute the goal.
+->Maven pom.xml file always points to Local Repository.
+
+-> While executing a task or goal, maven looks fot the POM.xml file in the current directory.
+
+->When install maven, by default maven built on pom.xml file, it is called as SUPER POM/PARENET POM
+
+-> But it is not visible.
+
+->All configurations of Super pom/Parent pom are inherited to noraml pom.xml file.
+
+-> An easy way to look at the default configuration of the super POM is 
+   by running the follwing  command
+   --> go to where are the pom.xml file location and hit the command
+
+	root@beerenaresh-virtual-machine:/opt/maven-web-app#mvn help:effective-pom
+
+	--> Now you can see the default project source folder structure, output directory,
+	    plug-ins required, repositories, reporting directory,, which maven will be using
+	     while executing the desired goals.
+
+
+The sample pom.xml file as below
+----------------------------------
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>in.ashokit</groupId>
+	<artifactId>01-maven-web-app</artifactId>
+	<packaging>war</packaging>
+	<version>3.0-RELEASE</version>
+	<name>01-maven-web-app</name>
+	<url>http://maven.apache.org</url>
+   <dependencies>
+      <dependency>
+	<groupId>junit</groupId>
+	<artifactId>junit</artifactId>
+	<version>3.8.1</version>
+      </dependency>
+   </dependencies>
+ <build>
+   <finalName>maven-web-app</finalName>
+<plugins>
+  <plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-war-plugin</artifactId>
+	<version>3.3.1</version>
+  </plugin>
+ </plugins>
+ </build>
+</project>
+
+
+
+ modelVersion:
+================
+	Represents the maven version.
+
+ groupId:
+==========
+	Represents the Company Name or Project Name.
+
+ artifactId:
+=============
+	Represents Project Name or Project Module Name or Project Feature Name.
+
+ Packaging:
+============
+	Represents type of package i.e JAR or WAR.
+	
+ versionId:
+=============
+	Represents the version of the Project.
+	versionId having 3 fields
+	majorrelease.minorrelease.hotfix/bugrelease
+	 Ex: 3.2.0
+======>	Above version is only numeric format 3.2.0 i.e ready to release (To Customer)
+	releases are maintained the Versioning.
+
+	Ex: 3.2.0-SNAPSHOT 
+======> Above version is alphanumeric ie. numeric format with SNAPSHOT
+	i.e It is under development process.
+	SNAPSHOT are not maintained Versioning.
+
+ properties:
+=============
+	Represents to referance any properties defined in the project as a variable.
+	*** Here as a DevOps engineer to work is give the sonarqube link ***
+
+ 
+ dependencies:
+===============
+	Represents if project needs any other dependencies to run the project mentioned here.
+	dependency means the framework that we want to use in the java.
+
+    NOTE===> When ever we create a maven project junit dependency comes by default.
+	     i.e maven downloaded the junit dependency in pom.xml file.
+
+
+    <dependencies>
+	<dependency>
+	   <groupId>junit</groupId>
+	   <artifactId>junit</artifactId>
+	   <version>3.8.1</version>
+	</dependency>
+    </dependencies>
+
+
+	If we wnat to add springcore dependency, we should must known the springcore dependency
+	groupID, ArtifactId,version.
+	For this mavan people provided that dependencies in one websit mvnrepository.com
+	Search springcore dependency just copy and add to pom.xml file
+
+
+<!-- https://mvnrepository.com/artifact/org.bitbucket.abdysamat/springcore -->
+<dependency>
+    <groupId>org.bitbucket.abdysamat</groupId>
+    <artifactId>springcore</artifactId>
+    <version>1.2.3-RELEASE</version>
+</dependency>
+
+
+
+  distributionManagement:
+===========================
+	Represents, the remote repositories, how to deploy the projects site and documentation.
+	*** Here as a DevOps engineer to work is give the nexus url link ***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

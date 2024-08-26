@@ -1,0 +1,73 @@
+Installation Maven in Linux
+===========================
+
+Pre- Requisites:
+-----------------
+1. Java Instalaltion 
+2. Install Git
+3. Install Maven
+
+
+
+1. Java Installtion steps:
+----------------------------
+
+Step1: Update the packages 
+	$sudo apt-get update
+Step2:Install default jre
+	$sudo apt-get install default-jre
+Step3:Install jdk
+	$sudo apt-get install default-jdk
+Step4:if you want specific version mention and installed it.
+Step4: To verify java Installation
+	$java --vesion
+	openjdk 11.0.22 2024-01-16
+
+ Setting the Java Environment variables
+ --------------------------------------
+Step1: $readlink -f /usr/bin/java
+           /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+Step2: $sudo vi /etc/environment
+	  Add the following line at the endd of the file
+         JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64" save and exit
+Step4: Check it once java home by
+	$echo $JAVA_HOME
+	 /usr/lib/jvm/java-11-openjdk-amd64
+
+
+To Uninstall java
+-----------------
+Step1: To check version of java
+      $java --version
+	openjdk 11.0.22 2024-01-16
+
+Step2: Run a command to uninstall
+	$sudo apt remove --autoremove openjdk-8-.*
+
+
+2.Install Git
+================
+Step1: $sudo apt-get install git
+Step2: $git --version
+	git version 2.34.1
+
+
+3. Install Maven
+===================
+Step1: $sudo apt install maven -y
+
+Step2: $mvn -version
+	Apache Maven 3.6.3
+	Maven home: /usr/share/maven
+	Java version: 1.8.0_402, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-	amd64/jre
+	Default locale: en_IN, platform encoding: UTF-8
+	OS name: "linux", version: "6.5.0-35-generic", arch: "amd64", family: "unix"
+
+
+
+	
+
+
+
+
+

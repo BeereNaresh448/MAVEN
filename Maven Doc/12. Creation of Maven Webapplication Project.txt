@@ -1,0 +1,140 @@
+Creation of Maven WebApplication
+============================================
+
+	We can create a simple maven standalone application by executing the
+"achetype:generate" command of mvn tool.
+
+Syntax:
+========
+
+mvn archetype:generate -DgroupId=<Companyname/Projectname> -DartifactId=<Projectmodulename/Projectfeaturename> 
+-DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=<booleanvalue>
+
+
+Ex:
+mvn archetype:generate -DgroupId=in.ashokIT -DartifactId=maven-mavenwebapp   
+-DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false  
+
+Practice:
+=========
+C:\>mvn archetype:generate -DgroupId=in.ashokit -DartifactId=mavenwebapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------< org.apache.maven:standalone-pom >-------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] >>> archetype:3.2.1:generate (default-cli) > generate-sources @ standalone-pom >>>
+[INFO]
+[INFO] <<< archetype:3.2.1:generate (default-cli) < generate-sources @ standalone-pom <<<
+[INFO]
+[INFO]
+[INFO] --- archetype:3.2.1:generate (default-cli) @ standalone-pom ---
+[INFO] Generating project in Batch mode
+[INFO] ----------------------------------------------------------------------------
+[INFO] Using following parameters for creating project from Old (1.x) Archetype: maven-archetype-webapp:1.0
+[INFO] ----------------------------------------------------------------------------
+[INFO] Parameter: basedir, Value: C:\
+[INFO] Parameter: package, Value: in.ashokit
+[INFO] Parameter: groupId, Value: in.ashokit
+[INFO] Parameter: artifactId, Value: mavenwebapp
+[INFO] Parameter: packageName, Value: in.ashokit
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] project created from Old (1.x) Archetype in dir: C:\mavenwebapp
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:03 min
+[INFO] Finished at: 2024-06-01T14:42:47+05:30
+[INFO] ------------------------------------------------------------------------
+
+C:\>
+
+Goto Location as
+
+C:\mavenwebapp> see the src folder and pom file
+
+
+execute the clean package goal in the pom.xml file location
+
+C:\mavenwebapp>mvn clean package
+[INFO] Scanning for projects...
+[INFO]
+[INFO] -----------------------< in.ashokit:mavenwebapp >-----------------------
+[INFO] Building mavenwebapp Maven Webapp 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO]
+[INFO] --- clean:3.2.0:clean (default-clean) @ mavenwebapp ---
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ mavenwebapp ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO]
+[INFO] --- compiler:3.13.0:compile (default-compile) @ mavenwebapp ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ mavenwebapp ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\mavenwebapp\src\test\resources
+[INFO]
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ mavenwebapp ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- surefire:3.2.5:test (default-test) @ mavenwebapp ---
+[INFO] No tests to run.
+[INFO]
+[INFO] --- war:3.4.0:war (default-war) @ mavenwebapp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [mavenwebapp] in [C:\mavenwebapp\target\mavenwebapp]
+[INFO] Processing war project
+[INFO] Copying webapp resources [C:\mavenwebapp\src\main\webapp]
+[INFO] Building war: C:\mavenwebapp\target\mavenwebapp.war
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.150 s
+[INFO] Finished at: 2024-06-01T14:45:46+05:30
+[INFO] ------------------------------------------------------------------------
+
+Access Admin home page of Tomcat Server
+==========================================
+ Open browser type as,
+	http://localhost:8080/
+
+Click on the Manager App ---> List all Application ---> click on mavenwebapp --> click on this
+Open webpage.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

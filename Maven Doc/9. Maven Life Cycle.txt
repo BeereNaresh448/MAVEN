@@ -1,0 +1,105 @@
+Maven Life Cycle
+=================
+
+Maven is based around the central concept of a build lifecycle.
+
+i.e Process for building and distributing a particular artifact(Project) is cleanly defined.
+
+There are THREE built-in build lifecycles
+
+1. default lifecycle
+2. clean lifecycle and
+3. site lifecycle
+
+1. default lifecycle:
+=======================
+	The default lifecycle handles the yours Project Deployment.
+
+The default lifecycle comprises of the following pahses.
+
+ ===> compile:	It compiles the Project source code, i.e converts .java files to .class files
+		and Stores the .classes files in the target/classes folder.
+
+ ===> validate:	This step validates if the project structure is correct.
+		i.e It checks if all dependencies have been downloaded and are 
+		 available in the local repository.
+ ===> test:	Test the complied source code using a suitable unit test framework.
+	          These test should not require the code be packaged or deployed.
+
+ ===> package:	Take the compiled code and package it in its distributale format such as                    JAR/WAR.
+
+ ===> install:	Install the package into local repository and used as a dependency in other                   projects locally.
+
+ ===> verify:	Run any checks to verify the package is valid and meet the quality criteria.
+
+ ===> deploy:	Done in the build env, copies the final package to the repository for sharing                   with other developers and projects.
+
+
+
+2. clean lifecycle:
+====================
+	Clean lifecycle handles project cleaning.
+
+The clean lifecycle comprises of the following pahses.
+
+ ====> pre-clean:  Execute processes needed prior to the Project Cleaning.
+ ====> clean	:  Removes all files generated the previous build.
+ ====> post-clean: Execute processes needed to finalize the project cleaning.
+
+
+
+3.Site lifecycle:
+====================
+	Site lifecycle handles the creation of your projects website.
+
+The Site lifecycle comprises of the following pahses.
+
+ ====> pre-site: Execute the processes needed prior to the actual project site generation.
+ ====> site:	 Generate the projects site documentation.
+ ====> post-site: Execute the processes needed to finalize the site generation and preare
+		  for site deployment.
+ ====> site-deploy: deploy the generated site documentation to the specified Webserver.		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

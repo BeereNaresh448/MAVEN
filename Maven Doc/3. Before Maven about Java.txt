@@ -1,0 +1,54 @@
+Maven
+-----
+Before going to discuss we must know about Java.
+
+-----> Java is a Programming Language.
+-----> Developed by SunMicroSystem Comapny.
+-----> Now oracle Comapany acquired SunMicroSystem.
+-----> Now Java is under the License of Oracle Company.
+-----> Java is High Level - Programmming Lanaguage.
+-----> Java Program files will have .java extension.
+	Ex: demo.java, login.java
+-----> Java Programs should be converted into machine understandale format to execute.
+-----> Java Programs we cant execute directly (.java files)
+-----> We need to compile java source code into byte code using Java Compiler.
+	Ex: javac demo.java, javac login.java
+-----> When we compile java source code it will converted into .class file
+-----> We need to execute .class file to run our java program
+	Ex: java demo
+-----> When you run a java program, JVM will start and it will execute java program.
+	JVM-----> Java Virtual Machine
+-----> JVM will convert byte code into machine understandable code.
+
+-----> Java Project contains several java programs.
+-----> We need to compile project source code into byte code, when compile the project 	source code we will get .class files.
+-----> To deploy Java Project, we will package all .class files as JAR/WAR files.
+
+
+--> Standalone java projects will be packaged as JAR file.
+--> Web Application will be packaged as WAR file.
+
+	JAR ---> JAVA ARCHIEVE
+	WAR ---> WEB ARCHIEVE
+
+
+-> When Java Project Complied as following 
+
+     	        compile			               packaged
+.java files   ===========>>>  .class files        ================>  JAR/ WAR file  ====> Deployed in to Server
+(Java Project)               (Once compiled it       [ By maven]
+		              generate the byte 
+			      code as .class files)
+
+=====
+NOTE
+=====
+
+ **** Java Source code is not possible to deploy on the server directly ****
+ **** Java Project contains number of java files it is not possible to compile at a time ****
+ *** So Maven Tool comes to picture, java Project source code is packaged as JAR/WAR file ***
+  ** By using this JAR/WAR files we can deployed on the Server and accessed by the User**
+
+
+
+	

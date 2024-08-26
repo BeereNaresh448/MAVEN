@@ -1,0 +1,44 @@
+Release and SNAPSHOT in Maven
+=============================
+In POM.XML file
+
+ versionId:
+=============
+	Represents the version of the Project.
+	versionId having 3 fields
+	majorrelease.minorrelease.hotfix/bugrelease
+	 Ex: 3.2.0
+======>	Above version is only numeric format 3.2.0 i.e ready to release (To Customer)
+	releases are maintained the Versioning.
+
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>in.javahome</groupId>
+	<artifactId>myweb</artifactId>
+	<packaging>war</packaging>
+	<version>8.2.0</version>
+	<name>Java Home myweb</name>
+	<url>http://maven.apache.org</url>
+
+
+	Ex: 3.2.0-SNAPSHOT 
+======> Above version is alphanumeric ie. numeric format with SNAPSHOT
+	i.e It is under development process.
+	SNAPSHOT are not maintained Versioning.
+
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.mt</groupId>
+	<artifactId>maven-web-application</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>maven-web-application</name>
+	<description>Maven Web Project for Java Project</description>
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+Java Instalaltion on LINUX (Ubuntu)
+===================================
+To remove older version of java,
+
+Switch to root user
+#apt remove --autoremove openjdk-8-*
+
+
+To Install java,
+
+#apt-get install openjdk-8-jdk
+
+
+Setting java Environment variable
+==================================
+Go to
+
+#vi ~/.bashrc 
+
+At the end of the file add below lines and save it.
+
+JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+export JAVA_HOME
+export PATH=$PATH:$JAVA_HOME/bin
+
+
+
+To see variables are set or not
+==================================
+
+root@beerenaresh-virtual-machine:~# echo $JAVA_HOME
+/usr/lib/jvm/java-1.8.0-openjdk-amd64
+root@beerenaresh-virtual-machine:~#
+
+
+
+Uninstall java
+====================
+#apt remove --autoremove openjdk-8-*

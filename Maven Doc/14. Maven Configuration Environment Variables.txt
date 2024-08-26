@@ -1,0 +1,29 @@
+Configure Environment Variables
+================================
+Create a maven.sh file inside the /etc/profile.d/ directory:
+
+	root@ubuntu:~# vim /etc/profile.d/maven.sh
+
+
+Copy the following configuration out and paste it into the maven.sh file:
+
+	export JAVA_HOME=/usr/lib/jvm/default-java
+	export M2_HOME=/opt/maven
+	export MAVEN_HOME=/opt/maven
+	export PATH=${M2_HOME}/bin:${PATH}
+
+Finally, to get these variables into play in the environment, run the source command on the file:
+
+	root@ubuntu:~# source /etc/profile.d/maven.sh
+
+
+To set Environment:
+======================
+Goto the --->
+
+vi ~/.bash_profile  (this a hidden file it will availablein home dir )
+
+
+export M2_HOME="/opt/apache-maven-3.6.2"
+exportPATH=$PATH:$M2_HOME/bin
+

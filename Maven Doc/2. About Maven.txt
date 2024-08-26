@@ -1,0 +1,47 @@
+=====================================
+		MAVEN
+=====================================
+
+About MAVEN:
+-----------
+
+--> Maven is a Free and OpenSource Software by Apache Oraganization
+--> Maven software developed using Java Programming language.
+--> Maven is used to perform Build-Automation for Java projects.
+--> Maven is called as Java Build Tool.
+
+
+What we can do using Maven?
+---------------------------
+
+---> By using Maven, we can create initial project Folder Structure.
+---> We can download "Project Dependencies" using maven.
+	Ex: spring boot, hibernate, kafka, redis, email, log4j, junit etc
+---> To develop one java project we will use several frameworks like              
+	 spring,hibernate etc along with java.
+---> We need to download those frameworks and we should add to our project.
+---> These frameworks are used in our project are called as "Dependencies"
+---> Instead of we are downloading dependencies, we can tell to maven      
+	software download that dependencies.
+
+NOTE: Required dependencies will be added in ""pom.xml"" file in maven software it will download them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
